@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pico-1.5.9/pico-1.5.9/css/pico.min.css">
+  <script src="/index.js" defer></script>
+  <title>PCOS Prediction</title>
+</head>
+<body>
+  <main class="container">
+    <h1>PCOS Prediction</h1>
+    <form id="form">
+      <label for="age">Age</label>
+      <input type="number" id="age" step="0.001">
+  
+      <label for="marriageStatus">Marrie Status (years)</label>
+      <input type="number" id="marriageStatus" step="0.001">
+  
+      <label for="weight">Weight</label>
+      <input type="number" id="weight" step="0.001">
+  
+      <label for="bmi">BMI</label>
+      <input type="number" id="bmi" step="0.001">
+  
+      <label for="follicleNoR">Follicle Count Right</label>
+      <input type="number" id="follicleNoR" step="0.001">
+  
+      <label for="follicleNoL">Follicle Count Left</label>
+      <input type="number" id="follicleNoL" step="0.001">
+  
+      <label for="amh">AMH</label>
+      <input type="number" id="amh" step="0.001">
+  
+      <label for="regularCycle">Regular Cycle</label>
+      <input type="number" id="regularCycle" step="0.001">
+  
+      <label for="cycleLength">Cycle Length (days)</label>
+      <input type="number" id="cycleLength" step="0.001">
+  
+        
+  
+      <fieldset style="display: grid; row-gap: 1rem;">
+        
+        <label for="skinDarkening">
+          <input type="checkbox" id="skinDarkening">
+          Skin Darkening
+        </label>
+
+        
+        <label for="hairGrowth">
+          <input type="checkbox" id="hairGrowth">
+          Hair Growth</label>
+    
+        
+        <label for="weightGain">
+          <input type="checkbox" id="weightGain">
+          Weight Gain</label>
+    
+        
+        <label for="fastFood">
+          <input type="checkbox" id="fastFood">
+          Fast Food</label>
+    
+        
+        <label for="pimples">
+          <input type="checkbox" id="pimples">
+          Pimples</label>
+      </fieldset>
+  
+      <button type="submit">Submit</button>
+    </form>
+    <div id="result" role="alert"></div>
+  </main>
+</body>
+</html>
